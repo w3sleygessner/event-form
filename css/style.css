@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+}
+
+.text-gray {
+  color: #c1bccc;
+}
+
+h1,
+h2,
+legend {
+  font-family: "Archivo", sans-serif;
+}
+
+body {
+  background-color: #e5e5e5;
+  font-family: "Poppins", sans-serif;
+}
+
+body::before {
+  content: "";
+  width: 100%;
+  height: 368px;
+  position: absolute;
+  z-index: -1;
+  background-color: #121214;
+}
+
+#page {
+  width: 736px;
+  margin: auto;
+  border-radius: 4px;
+}
+
+/************ header ************/
+
+header {
+  width: 319px;
+  padding-top: 74px;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 34px;
+  line-height: 1.2;
+}
+
+header p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #6565c9;
+  margin: 38px 0;
+}
+
+form {
+  background-color: #fafafc;
+  padding: 64px;
+}
+
+.fieldset__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+form fieldset .fieldset__wrapper legend {
+  width: 100%;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 1px solid #e6e6f0;
+}
+
+form fieldset .fieldset__wrapper .input__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+form fieldset .fieldset__wrapper .input__wrapper input,
+select,
+textarea {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: 1px solid #c1bccc;
+}
+
+form fieldset .fieldset__wrapper .input__wrapper input:invalid {
+  outline: 1px solid rgb(230, 89, 89);
+}
+
+form fieldset .fieldset__wrapper .input__wrapper label,
+select {
+  font-size: 16px;
+  line-height: 28px;
+  color: #4e4958;
+}
+
+form fieldset .fieldset__wrapper .input__wrapper textarea {
+  min-height: 220px;
+}
+
+form fieldset .fieldset__wrapper .input__wrapper select {
+  appearance: none;
+}
+
+form fieldset .fieldset__wrapper .c-checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+form fieldset .fieldset__wrapper .date__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+form fieldset .date__wrapper #event__date {
+  width: 380px;
+}
+
+footer {
+  height: 150px;
+  background-color: rgb(227 227 227);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgb(156 157 163);
+  border-radius: 4px;
+}
+
+footer button {
+  padding: 20px 250px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Archivo";
+  background-color: rgb(112, 221, 112);
+  color: #fff;
+}
